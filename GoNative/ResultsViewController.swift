@@ -5,14 +5,6 @@
 //  Created by Simran Ajwani on 10/19/22.
 //
 
-//RESOURCES:
-//grow native resource guide, national wildlife federation keystone species, how to plant native plants (grow native),
-//email address to greenresources@mobot.org (info service)
-//homegrown national part initiative link
-//if you want guidance from here, St. Louis autobonne
-
-//homegrownnationalpark.org --> get your property on the map
-//pop up - Congrats! Reached percentage
 import UIKit
 import FirebaseDatabase
 import FirebaseAuth
@@ -69,14 +61,11 @@ class ResultsViewController: UIViewController {
 
     var nativePercentage = 70
     @IBOutlet weak var nativePercentageText: UILabel!
-    //var totalKeystoneCount: [Double] = []
 
+    //calculating which native plants that the user has added are keystones
     func calculateKeystones(){
         countarea = countarea+1
         var keystoneNames = ["Black Cherry", "Black Oak", "Box Elder", "River Birch", "Sugar Maple", "White Oak", "Prairie Willow", "Black-eyed Susan", "Lanceleaf Coreopsis", "Stiff Goldenrod"]
-        var totalKeystoneCount: [Double] = []
-        var totalNativeCount: [Double] = []
-        var totalNativeCountNum = 0
         var totalKeystoneCountNum = 0
         self.countkeys = self.countkeys + 1
 
@@ -84,7 +73,7 @@ class ResultsViewController: UIViewController {
             self.loadKeystonePlantInfo = loadKeystonePlantInfo
             print("LOADKEYSTONEPLANTINFO \(loadKeystonePlantInfo)")
             
-            for(key,value) in loadKeystonePlantInfo{
+            for(key,_) in loadKeystonePlantInfo{
                 if(keystoneNames.contains(key)){
                     totalKeystoneCountNum = totalKeystoneCountNum + 1
                     let index = keystoneNames.firstIndex(of: key)
@@ -111,6 +100,7 @@ class ResultsViewController: UIViewController {
     
     @IBOutlet weak var keystoneText: UILabel!
     
+    //calculating the total area of native plants (from Firebase Database) that the user has added
     func calculateAreas(){
         var totalNativeArea = 0.0
         var fillSpaceArea = 0.0
@@ -164,6 +154,7 @@ class ResultsViewController: UIViewController {
     
     @IBOutlet weak var nativeAreaText: UILabel!
     
+    //calculating the total volume of native plants (from Firebase Database) that the user has added
     func calculateNatives(){
         var totalNativeVolume = 0.0
         var totalHouseVolume = 0.0
@@ -221,6 +212,7 @@ class ResultsViewController: UIViewController {
         }
     }
     
+    //loading native plant data from Firebase databse
     func loadKeystonesFromDatabase(completion: @escaping ([String:Double]) -> Void){
         let userID = UIDevice.current.identifierForVendor?.uuidString
         for i in 0...335{
@@ -248,6 +240,7 @@ class ResultsViewController: UIViewController {
         }
     }
     
+    //loading native plant data from Firebase databse
     func loadNativeFromDatabase(completion: @escaping ([String: [Double]]) -> Void) {
         let userID = UIDevice.current.identifierForVendor?.uuidString
         for i in 0...335{
@@ -276,6 +269,7 @@ class ResultsViewController: UIViewController {
 
     }
     
+    //loading native plant data from Firebase databse
     func loadAreaFromDatabase(completion: @escaping ([String: [Double]]) -> Void) {
         let userID = UIDevice.current.identifierForVendor?.uuidString
         for i in 0...335{

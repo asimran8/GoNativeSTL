@@ -4,8 +4,7 @@
 //
 //  Created by Simran Ajwani on 10/23/22.
 //
-//trees --> bushes, forbes, grasses
-//trees, bushes or shrubs, all others (forbes, grasses, vines, etc.)
+
 import UIKit
 import FirebaseDatabase
 import FirebaseAuth
@@ -79,6 +78,7 @@ class NativePlantViewController: UIViewController, UITableViewDataSource, UISear
         tableViewContentOffset = scrollView.contentOffset
     }
     
+    //if the user pressed the negative stepper for the plant, then the numberOfPlants value in the Firebase Database gets updated
     func didMinus(for cell: NativePlantTableViewCell){
         let userID = UIDevice.current.identifierForVendor?.uuidString
         for i in 0...335{
@@ -86,18 +86,10 @@ class NativePlantViewController: UIViewController, UITableViewDataSource, UISear
                 if(cell.nativePlantName.text ?? "" == snapshot.value as! String){
                     self.ref.child(String(describing: i)).child("numberOfPlants").child(userID ?? "").observeSingleEvent(of: .value, with: { [self] (snapshot) in
                         if(snapshot.key == userID){
-                            /*
-                            let updates = [
-                              userID: ServerValue.increment(-1),
-                            ] as? [String:Any]
-                            Database.database().reference().child(String(describing:i)).child("numberOfPlants").updateChildValues(updates ?? ["":0]);
-                            */
-                            
                             let updates = [
                                 userID: Int(cell.nativePlantStepper.value),
                             ] as? [String:Any]
                             Database.database().reference().child(String(describing:i)).child("numberOfPlants").updateChildValues(updates ?? ["":0]);
-          
                         }
                     })
                 }
@@ -106,6 +98,8 @@ class NativePlantViewController: UIViewController, UITableViewDataSource, UISear
     }
 
     @IBOutlet weak var buttonNext: UIButton!
+    
+    //if the user pressed the positive stepper for the plant, then the numberOfPlants value in the Firebase Database gets updated
     func didAdd(for cell: NativePlantTableViewCell) {
         //guard let indexPath = nativePlantTable?.indexPath(for: cell) else { return }
         let userID = UIDevice.current.identifierForVendor?.uuidString
@@ -114,20 +108,10 @@ class NativePlantViewController: UIViewController, UITableViewDataSource, UISear
                 if(cell.nativePlantName.text ?? "" == snapshot.value as! String){
                     self.ref.child(String(describing: i)).child("numberOfPlants").child(userID ?? "").observeSingleEvent(of: .value, with: { [self] (snapshot) in
                         if(snapshot.key == userID){
-                            
-                            /*
-                            let updates = [
-                              userID: ServerValue.increment(1),
-                            ] as? [String:Any]
-                            Database.database().reference().child(String(describing:i)).child("numberOfPlants").updateChildValues(updates ?? ["":0]);
-                            */
-                            
                             let updates = [
                                 userID: Int(cell.nativePlantStepper.value),
                             ] as? [String:Any]
                             Database.database().reference().child(String(describing:i)).child("numberOfPlants").updateChildValues(updates ?? ["":0]);
-                                                        
-
                         }
                     })
                 }
@@ -139,6 +123,7 @@ class NativePlantViewController: UIViewController, UITableViewDataSource, UISear
            return 3
     }
     
+    //separating the table into native plant categories: Trees, Shrubs, Others
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
            let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 100))
             view.backgroundColor = UIColor(red: 0.10, green: 0.36, blue: 0.31, alpha: 1.00)
@@ -164,6 +149,7 @@ class NativePlantViewController: UIViewController, UITableViewDataSource, UISear
         }
     }
     
+    //setting up custom cell for native plant table
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customcell", for: indexPath) as! NativePlantTableViewCell
         cell.delegate = self
@@ -248,11 +234,10 @@ class NativePlantViewController: UIViewController, UITableViewDataSource, UISear
     var indexShrubArray: [Int] = []
     var indexOtherArray: [Int] = []
 
+    //sorting arrays and reloading data in table
     func LoadCalls(){
         ref = Database.database().reference()
-        
         for i in 0...335{
-
             ref.child(String(describing: i)).observeSingleEvent(of: .value, with: { snapshot in
 
                 if(snapshot.childSnapshot(forPath: "plantType").value as! String == "Trees"){
