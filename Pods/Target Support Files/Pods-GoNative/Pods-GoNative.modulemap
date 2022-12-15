@@ -1,0 +1,6 @@
+framework module Pods_GoNative {
+  umbrella header "Pods-GoNative-umbrella.h"
+
+  export *
+  module * { export * }
+}

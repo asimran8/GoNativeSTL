@@ -1,0 +1,6 @@
+framework module Pods_GoNative_GoNativeUITests {
+  umbrella header "Pods-GoNative-GoNativeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

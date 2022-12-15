@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04D103D1C4406091ED554A27 /* Pods_GoNative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE7FA309049241091D3CCF6 /* Pods_GoNative.framework */; };
+		0DA037DFBFF444DB9813A27A /* Pods_GoNativeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51CEC7772D8045593430D320 /* Pods_GoNativeTests.framework */; };
+		C6ED817E02750FEC1C9BEC0E /* Pods_GoNative_GoNativeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5740532E58DFB8AC5AC10A13 /* Pods_GoNative_GoNativeUITests.framework */; };
+		DF12AB1B291DB54000CB03ED /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF12AB1A291DB54000CB03ED /* Extensions.swift */; };
 		DF20095F28F782FC004733C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20095E28F782FC004733C3 /* AppDelegate.swift */; };
 		DF20096128F782FC004733C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20096028F782FC004733C3 /* SceneDelegate.swift */; };
 		DF20096328F782FC004733C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20096228F782FC004733C3 /* ViewController.swift */; };
@@ -16,6 +20,17 @@
 		DF20097628F78300004733C3 /* GoNativeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20097528F78300004733C3 /* GoNativeTests.swift */; };
 		DF20098028F78300004733C3 /* GoNativeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20097F28F78300004733C3 /* GoNativeUITests.swift */; };
 		DF20098228F78300004733C3 /* GoNativeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF20098128F78300004733C3 /* GoNativeUITestsLaunchTests.swift */; };
+		DF49AEB4290628840044339D /* NativePlantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF49AEB2290628840044339D /* NativePlantViewController.swift */; };
+		DF49AEB5290628840044339D /* NativePlantViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF49AEB3290628840044339D /* NativePlantViewController.xib */; };
+		DF49AEB929062E140044339D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF49AEB829062E140044339D /* GoogleService-Info.plist */; };
+		DF49AEBA29062E140044339D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF49AEB829062E140044339D /* GoogleService-Info.plist */; };
+		DF49AEBB29062E140044339D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF49AEB829062E140044339D /* GoogleService-Info.plist */; };
+		DF64146029073B2A00511EB9 /* NativePlantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF64145E29073B2A00511EB9 /* NativePlantTableViewCell.swift */; };
+		DF64146129073B2A00511EB9 /* NativePlantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF64145F29073B2A00511EB9 /* NativePlantTableViewCell.xib */; };
+		DF6997D229008F7E00AE7002 /* CalculationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6997D129008F7D00AE7002 /* CalculationsViewController.swift */; };
+		DF6997D4290091B500AE7002 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6997D3290091B500AE7002 /* ResultsViewController.swift */; };
+		DF7BC1822925635500D226CF /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7BC1812925635500D226CF /* ResourcesViewController.swift */; };
+		DFAD499C2921C8F800C91257 /* PlainHorizontalProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAD499B2921C8F800C91257 /* PlainHorizontalProgressBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +51,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4CB7A0E9215D6E739C7C9C1C /* Pods-GoNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoNative.release.xcconfig"; path = "Target Support Files/Pods-GoNative/Pods-GoNative.release.xcconfig"; sourceTree = "<group>"; };
+		4F141A3E9C9ED33612928995 /* Pods-GoNative-GoNativeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoNative-GoNativeUITests.release.xcconfig"; path = "Target Support Files/Pods-GoNative-GoNativeUITests/Pods-GoNative-GoNativeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		51CEC7772D8045593430D320 /* Pods_GoNativeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoNativeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5740532E58DFB8AC5AC10A13 /* Pods_GoNative_GoNativeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoNative_GoNativeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82BF8D364A1904919F5F5F56 /* Pods-GoNative-GoNativeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoNative-GoNativeUITests.debug.xcconfig"; path = "Target Support Files/Pods-GoNative-GoNativeUITests/Pods-GoNative-GoNativeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		976AFA49535EF9BCE863E237 /* Pods-GoNativeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoNativeTests.release.xcconfig"; path = "Target Support Files/Pods-GoNativeTests/Pods-GoNativeTests.release.xcconfig"; sourceTree = "<group>"; };
+		BAE7FA309049241091D3CCF6 /* Pods_GoNative.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoNative.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE215224A098A5520737EB61 /* Pods-GoNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoNative.debug.xcconfig"; path = "Target Support Files/Pods-GoNative/Pods-GoNative.debug.xcconfig"; sourceTree = "<group>"; };
+		DF12AB1A291DB54000CB03ED /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		DF20095B28F782FC004733C3 /* GoNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF20095E28F782FC004733C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF20096028F782FC004733C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +73,16 @@
 		DF20097B28F78300004733C3 /* GoNativeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoNativeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF20097F28F78300004733C3 /* GoNativeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoNativeUITests.swift; sourceTree = "<group>"; };
 		DF20098128F78300004733C3 /* GoNativeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoNativeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DF49AEB2290628840044339D /* NativePlantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativePlantViewController.swift; sourceTree = "<group>"; };
+		DF49AEB3290628840044339D /* NativePlantViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativePlantViewController.xib; sourceTree = "<group>"; };
+		DF49AEB829062E140044339D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DF64145E29073B2A00511EB9 /* NativePlantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativePlantTableViewCell.swift; sourceTree = "<group>"; };
+		DF64145F29073B2A00511EB9 /* NativePlantTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NativePlantTableViewCell.xib; sourceTree = "<group>"; };
+		DF6997D129008F7D00AE7002 /* CalculationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationsViewController.swift; sourceTree = "<group>"; };
+		DF6997D3290091B500AE7002 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		DF7BC1812925635500D226CF /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
+		DFAD499B2921C8F800C91257 /* PlainHorizontalProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlainHorizontalProgressBar.swift; sourceTree = "<group>"; };
+		E8D718AA1F027EBA4328DB34 /* Pods-GoNativeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoNativeTests.debug.xcconfig"; path = "Target Support Files/Pods-GoNativeTests/Pods-GoNativeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04D103D1C4406091ED554A27 /* Pods_GoNative.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DA037DFBFF444DB9813A27A /* Pods_GoNativeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +106,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6ED817E02750FEC1C9BEC0E /* Pods_GoNative_GoNativeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		459E3EE9FCDDC337C1EC7861 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE215224A098A5520737EB61 /* Pods-GoNative.debug.xcconfig */,
+				4CB7A0E9215D6E739C7C9C1C /* Pods-GoNative.release.xcconfig */,
+				82BF8D364A1904919F5F5F56 /* Pods-GoNative-GoNativeUITests.debug.xcconfig */,
+				4F141A3E9C9ED33612928995 /* Pods-GoNative-GoNativeUITests.release.xcconfig */,
+				E8D718AA1F027EBA4328DB34 /* Pods-GoNativeTests.debug.xcconfig */,
+				976AFA49535EF9BCE863E237 /* Pods-GoNativeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DF20095228F782FB004733C3 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +133,8 @@
 				DF20097428F78300004733C3 /* GoNativeTests */,
 				DF20097E28F78300004733C3 /* GoNativeUITests */,
 				DF20095C28F782FC004733C3 /* Products */,
+				459E3EE9FCDDC337C1EC7861 /* Pods */,
+				E066BB19A21C8270448E6EEE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +151,23 @@
 		DF20095D28F782FC004733C3 /* GoNative */ = {
 			isa = PBXGroup;
 			children = (
+				DF49AEB3290628840044339D /* NativePlantViewController.xib */,
+				DFAD499B2921C8F800C91257 /* PlainHorizontalProgressBar.swift */,
+				DF49AEB2290628840044339D /* NativePlantViewController.swift */,
+				DF6997D3290091B500AE7002 /* ResultsViewController.swift */,
+				DF6997D129008F7D00AE7002 /* CalculationsViewController.swift */,
+				DF7BC1812925635500D226CF /* ResourcesViewController.swift */,
+				DF20096228F782FC004733C3 /* ViewController.swift */,
 				DF20095E28F782FC004733C3 /* AppDelegate.swift */,
 				DF20096028F782FC004733C3 /* SceneDelegate.swift */,
-				DF20096228F782FC004733C3 /* ViewController.swift */,
+				DF12AB1A291DB54000CB03ED /* Extensions.swift */,
 				DF20096428F782FC004733C3 /* Main.storyboard */,
 				DF20096728F78300004733C3 /* Assets.xcassets */,
 				DF20096928F78300004733C3 /* LaunchScreen.storyboard */,
+				DF49AEB829062E140044339D /* GoogleService-Info.plist */,
 				DF20096C28F78300004733C3 /* Info.plist */,
+				DF64145E29073B2A00511EB9 /* NativePlantTableViewCell.swift */,
+				DF64145F29073B2A00511EB9 /* NativePlantTableViewCell.xib */,
 			);
 			path = GoNative;
 			sourceTree = "<group>";
@@ -127,6 +189,16 @@
 			path = GoNativeUITests;
 			sourceTree = "<group>";
 		};
+		E066BB19A21C8270448E6EEE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAE7FA309049241091D3CCF6 /* Pods_GoNative.framework */,
+				5740532E58DFB8AC5AC10A13 /* Pods_GoNative_GoNativeUITests.framework */,
+				51CEC7772D8045593430D320 /* Pods_GoNativeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +206,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF20098528F78300004733C3 /* Build configuration list for PBXNativeTarget "GoNative" */;
 			buildPhases = (
+				E68135ACC2D5C0F6DFC37854 /* [CP] Check Pods Manifest.lock */,
 				DF20095728F782FB004733C3 /* Sources */,
 				DF20095828F782FB004733C3 /* Frameworks */,
 				DF20095928F782FB004733C3 /* Resources */,
+				5729B9D89F27142A65118661 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF20098828F78300004733C3 /* Build configuration list for PBXNativeTarget "GoNativeTests" */;
 			buildPhases = (
+				EE01264875354952C3461C82 /* [CP] Check Pods Manifest.lock */,
 				DF20096D28F78300004733C3 /* Sources */,
 				DF20096E28F78300004733C3 /* Frameworks */,
 				DF20096F28F78300004733C3 /* Resources */,
@@ -169,9 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF20098B28F78300004733C3 /* Build configuration list for PBXNativeTarget "GoNativeUITests" */;
 			buildPhases = (
+				DF4EFC052FB71AF0D24E38C8 /* [CP] Check Pods Manifest.lock */,
 				DF20097728F78300004733C3 /* Sources */,
 				DF20097828F78300004733C3 /* Frameworks */,
 				DF20097928F78300004733C3 /* Resources */,
+				AA065411858868662CB6474D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,6 +292,9 @@
 				Base,
 			);
 			mainGroup = DF20095228F782FB004733C3;
+			packageReferences = (
+				DFF0914C2905B0DC00C23E2D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = DF20095C28F782FC004733C3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,7 +311,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF64146129073B2A00511EB9 /* NativePlantTableViewCell.xib in Resources */,
+				DF49AEB929062E140044339D /* GoogleService-Info.plist in Resources */,
 				DF20096B28F78300004733C3 /* LaunchScreen.storyboard in Resources */,
+				DF49AEB5290628840044339D /* NativePlantViewController.xib in Resources */,
 				DF20096828F78300004733C3 /* Assets.xcassets in Resources */,
 				DF20096628F782FC004733C3 /* Main.storyboard in Resources */,
 			);
@@ -241,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF49AEBA29062E140044339D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,19 +332,130 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF49AEBB29062E140044339D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5729B9D89F27142A65118661 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoNative/Pods-GoNative-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoNative/Pods-GoNative-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoNative/Pods-GoNative-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA065411858868662CB6474D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoNative-GoNativeUITests/Pods-GoNative-GoNativeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GoNative-GoNativeUITests/Pods-GoNative-GoNativeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GoNative-GoNativeUITests/Pods-GoNative-GoNativeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF4EFC052FB71AF0D24E38C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoNative-GoNativeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E68135ACC2D5C0F6DFC37854 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoNative-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE01264875354952C3461C82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoNativeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DF20095728F782FB004733C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF7BC1822925635500D226CF /* ResourcesViewController.swift in Sources */,
+				DF6997D229008F7E00AE7002 /* CalculationsViewController.swift in Sources */,
+				DF12AB1B291DB54000CB03ED /* Extensions.swift in Sources */,
+				DFAD499C2921C8F800C91257 /* PlainHorizontalProgressBar.swift in Sources */,
+				DF64146029073B2A00511EB9 /* NativePlantTableViewCell.swift in Sources */,
 				DF20096328F782FC004733C3 /* ViewController.swift in Sources */,
 				DF20095F28F782FC004733C3 /* AppDelegate.swift in Sources */,
+				DF49AEB4290628840044339D /* NativePlantViewController.swift in Sources */,
 				DF20096128F782FC004733C3 /* SceneDelegate.swift in Sources */,
+				DF6997D4290091B500AE7002 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,64 +627,76 @@
 		};
 		DF20098628F78300004733C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE215224A098A5520737EB61 /* Pods-GoNative.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HH6V92GJ83;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 2RNLU4J4C2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GoNative/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GoNativeSTL;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = asimran.wustl.GoNative;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		DF20098728F78300004733C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CB7A0E9215D6E739C7C9C1C /* Pods-GoNative.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = HH6V92GJ83;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 2RNLU4J4C2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GoNative/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GoNativeSTL;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = asimran.wustl.GoNative;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		DF20098928F78300004733C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8D718AA1F027EBA4328DB34 /* Pods-GoNativeTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -508,8 +715,8 @@
 		};
 		DF20098A28F78300004733C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 976AFA49535EF9BCE863E237 /* Pods-GoNativeTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -528,8 +735,8 @@
 		};
 		DF20098C28F78300004733C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82BF8D364A1904919F5F5F56 /* Pods-GoNative-GoNativeUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HH6V92GJ83;
@@ -546,8 +753,8 @@
 		};
 		DF20098D28F78300004733C3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F141A3E9C9ED33612928995 /* Pods-GoNative-GoNativeUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HH6V92GJ83;
@@ -602,6 +809,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DFF0914C2905B0DC00C23E2D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = DF20095328F782FB004733C3 /* Project object */;
 }
